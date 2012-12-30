@@ -21,7 +21,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'guples_dev',                      # Or path to database file if using sqlite3.
         'USER': 'root',                      # Not used with sqlite3.
-        'PASSWORD': '',                  # Not used with sqlite3.
+        'PASSWORD': 'root',                  # Not used with sqlite3.
         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
@@ -29,9 +29,13 @@ DATABASES = {
 
 RESOURCES = []
 
-HEROKU_USERNAME = os.environ['heroku_username']
-HEROKU_PASSWORD = os.environ['heroku_password']
-HEROKU_SSO_SALT = os.environ['heroku_sso_salt']
+#HEROKU_USERNAME = os.environ['heroku_username']
+#HEROKU_PASSWORD = os.environ['heroku_password']
+#HEROKU_SSO_SALT = os.environ['heroku_sso_salt']
+
+HEROKU_USERNAME = "guples"
+HEROKU_PASSWORD = "pssm7DIeLcGj9X1s"
+HEROKU_SSO_SALT = "zGQcsKs62TdFenIM"
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name

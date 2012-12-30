@@ -2,8 +2,8 @@
   "id": "guples",
   "api": {
     "config_vars": [ "GUPLES_ACCESS_URL" ],
-    "password": "password_goes_here",
-    "sso_salt": "salt_goes_here",
+    "password": "pssm7DIeLcGj9X1s",
+    "sso_salt": "zGQcsKs62TdFenIM",
     "production": {
       "base_url": "https://yourapp.herokuapp.com/heroku/resources",
       "sso_url": "https://yourapp.herokuapp.com/sso/login"
