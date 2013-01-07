@@ -31,11 +31,12 @@ def _unauthorize_response():
 	return response
 
 def _is_authorized(request):
-	if 'HTTP_AUTHORIZATION' not in request.META:
+        print request.META
+        if 'HTTP_AUTHORIZATION' not in request.META:
 		logger.error("HTTP_AUTHORIZATION not found in META header")
 		return False
 
-	auth = request.META['HTTP_AUTHORIZATION'].split()
+        auth = request.META['HTTP_AUTHORIZATION'].split()
 	if len(auth) != 2:
 		logger.error("HTTP_AUTHORIZATION header is not of correct length")
 		return False
@@ -83,7 +84,8 @@ def heroku_provision(request):
 							'id': guple_store.id,
 							'config':
 								{
-									"GUPLES_ACCESS_URL": "http://gupleapp.com/%s" % guple_store.secret_key
+									"GUPLES_ACCESS_URL": "http://ec2-50-16-140-233.compute-1.amazonaws.com/%s" % guple_store.secret_key
+									#"SRCH2_ACCESS_URL": "http://ec2-50-16-140-233.compute-1.amazonaws.com:8080" 
 								}
 						}
 					)

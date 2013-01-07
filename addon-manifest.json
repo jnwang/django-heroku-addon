@@ -5,12 +5,12 @@
     "password": "pssm7DIeLcGj9X1s",
     "sso_salt": "zGQcsKs62TdFenIM",
     "production": {
-      "base_url": "https://yourapp.herokuapp.com/heroku/resources",
-      "sso_url": "https://yourapp.herokuapp.com/sso/login"
+      "base_url": "http://ec2-50-16-140-233.compute-1.amazonaws.com/heroku/resources",
+      "sso_url": "http://ec2-50-16-140-233.compute-1.amazonaws.com/sso/login"
     },
     "test": {
-      "base_url": "http://localhost:8000/heroku/resources",
-      "sso_url": "http://localhost:8000/sso/login"
+      "base_url": "http://localhost/heroku/resources",
+      "sso_url": "http://localhost/sso/login"
     }
   }
 }
